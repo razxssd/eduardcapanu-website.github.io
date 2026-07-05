@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Eduard Capanu</title>
+  <meta name="description" content="How I got here: from thirteen years of engineering into product leadership.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --ink: #1A1A1A;
+      --accent: #B4521E;
+      --muted: #6B6B6B;
+      --faint: #A6A198;
+      --border: #E7E4DD;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(250,249,246,0.82);
+      backdrop-filter: saturate(120%) blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1040px; margin: 0 auto;
+      padding: 18px 32px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px; letter-spacing: 0.02em; color: var(--ink);
+    }
+    .nav-links { display: flex; gap: 26px; align-items: center; font-size: 14px; }
+    .nav-links a { color: var(--muted); transition: color 0.15s ease; }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a.active { color: var(--ink); }
+
+    main {
+      max-width: 1040px; margin: 0 auto;
+      padding: clamp(64px, 9vw, 120px) 32px clamp(72px, 10vw, 128px);
+    }
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 0.14em; color: var(--accent);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-size: clamp(34px, 5.4vw, 60px);
+      line-height: 1.05; letter-spacing: -0.02em;
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+    .prose { max-width: 660px; }
+    .lead {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: clamp(20px, 2.5vw, 26px);
+      line-height: 1.4;
+      color: var(--ink);
+      margin-bottom: 32px;
+    }
+    .prose p {
+      font-size: 17.5px;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 0.08em; color: var(--muted);
+      margin-top: 40px; line-height: 1.9;
+    }
+    .back {
+      display: inline-block; margin-top: 56px;
+      font-family: 'JetBrains Mono', monospace; font-size: 13px;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(180,82,30,0.35); padding-bottom: 2px;
+      transition: border-color 0.15s ease;
+    }
+    .back:hover { border-bottom-color: var(--accent); }
+
+    footer {
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner {
+      max-width: 1040px; margin: 0 auto;
+      padding: 56px 32px 64px;
+    }
+    .footer-inner p {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 0.1em; color: var(--faint);
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; gap: 12px; padding: 14px 20px; }
+      .nav-links { width: 100%; flex-wrap: wrap; gap: 12px 18px; font-size: 13px; }
+      main { padding: 48px 20px 56px; }
+      h1 { font-size: clamp(28px, 8vw, 44px); }
+      .footer-inner { padding: 40px 20px 48px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html#top">eduard capanu</a>
+      <div class="nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#now">Now</a>
+        <a href="index.html#writing">Writing</a>
+        <a class="active" href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <p class="eyebrow">ABOUT</p>
+    <h1>How I got here.</h1>
+    <div class="prose">
+      <p class="lead">I started coding thirteen years ago out of pure curiosity, and that curiosity turned into a career. Years of hands-on engineering across Microsoft 365, Azure, React, and AWS, enough to be recognized as a Microsoft MVP along the way.</p>
+      <p>Along the way I started mentoring other engineers on the technical side, and I never stopped. I've always believed you don't really understand something until you can teach it to someone else, so teaching became the way I check my own thinking.</p>
+      <p>Somewhere in there I moved from writing code to leading the people who write it. Then I made a more deliberate move, from engineering leadership into product. The reason was simple: the biggest impact I could have wasn't in how something got built, it was in deciding what to build and why.</p>
+      <p>Today I lead the Growth Product part of Rebrandly. I own the roadmap from discovery to delivery, run the experiments, and stay close enough to the code to debug a webhook when it matters. I can have a strategy conversation with stakeholders in the morning and dig into an architecture problem with engineering in the afternoon, and that dual fluency is the part I like most. It lets me decide faster and lose less between product and engineering.</p>
+      <p>That same instinct came with me into the AI era. As I go deeper into building agentic AI systems, I teach what I learn while I'm still learning it, and I trade product and growth knowledge with the people around me. Teaching it is still how I make sure I really know it.</p>
+      <p class="meta">Based in Rome.<br>Fluent in Romanian, Italian, English, and currently learning French.</p>
+      <a class="back" href="index.html#top">← Back to the main page</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Built in Rome, with curiosity. | Romanian · Italian · English · learning French</p>
+    </div>
+  </footer>
+</body>
+</html>
